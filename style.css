@@ -1,0 +1,306 @@
+body {
+	margin: 0; padding: 0;
+	height: 200vh !important;
+	position: relative;
+}
+
+/*--------------전체 공유 설정----------------*/
+/* nav */
+
+html {letter-spacing: 0px;}
+html {font-family: 'NotoSansKR', 'Sans-serif'; width: 100%; font-size:13px; letter-spacing: 0px; color:#333; box-sizing: border-box;}
+body{ background: white; padding-top: 64px;}
+body{margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;}
+body{font-family: 'Noto Sans KR', sans-serif;
+    color: #222;
+    font-size: 13px;
+    line-height: 1.5;}
+a {color: #333;}
+
+/* 레이아웃 */
+.nav_container {width: 1200px; margin:auto;}
+
+/* 헤더 */
+header {height: 63px; border-bottom: 1px solid #6300FF;position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  background-color: white;
+  transition: top 0.2s ease-in-out;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.nav-up {top:-64px;} /* 페이지 스크롤 시 up */
+.navigation {position: relative;padding: 22px 0; display: flex;line-height: 1.15;}
+.circle {display:none; width: 40px; height: 40px; background-color: #00FF00; border-radius: 50%;position: absolute; z-index: -1; top: 50%; left:20px; transform: translateY(-55%); left: -20px;}
+.logo {display: flex; position: relative;}
+.logo h1 {font-family: 'Neue Machina'; font-weight: 800; font-size: 24px; margin-right: 10px;}
+.logo h1:hover .circle {display: block;}
+.logo h1:hover {font-color:#6300FF;}
+.line {height:20px;border-left: 2px solid #333; margin-right: 10px;}
+.logo p {font-weight: bold; font-size: 18px;}
+nav {position:absolute;display: flex; right: 0;}
+.guide {}
+.navM {font-family: Neue Machina; font-weight: 800; font-size: 20px;text-align: center; float: left;}
+.navM:first-child {margin-right: 80px;}
+.guide li {position: relative;}
+.guide li:hover .circle {display: block;}
+
+
+
+/*--------------오프닝 설정----------------*/
+/* 비디오 */
+
+.ivideo {
+	position: absolute; z-index: 500;
+	width: 100vw;
+}
+
+.video_box {
+	position: relative;
+	width: 100%;
+	padding-top:56%;
+}
+iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.house .ivideo {
+	transform: translateZ(490vw);
+	padding: 8em 12em;
+}
+
+
+
+/* ainmation 정의 */
+.filter_backback {
+	filter: blur(10px) brightness(50%);
+}
+
+.filter_back {
+	filter: blur(5px) brightness(70%);
+}
+
+.filter_zero {
+	filter: blur(0px) brightness(100%);
+}
+
+.opa0 {opacity: 0%;}
+.opa100 {opacity: 100%;} 
+
+
+/* 전체 3D 공간 */
+.world { position: fixed; top: 0; left: 0;
+	width: 100vw; height: 100vh; perspective: 1000px;
+display: none;}
+
+.background {height: auto; position: relative;}
+
+.scoll_btn {
+	width: 5vw;
+	position: absolute;
+	left: calc(50% - 2.5vw);
+	bottom:12%;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	z-index: 400;
+}
+
+.skip_intro_btn {
+	width: 11.5vw;
+	position: absolute;
+	z-index: 400;
+	bottom: 8.5%;
+	right: 4%;
+}
+
+
+
+/* 큰 컨테이너 2개 */
+.stage {
+	position: absolute; 
+	top: 0; left: 0;
+	width: 100vw; height: 100vh; 
+	transform-style: preserve-3d;
+}
+.house {
+	width: 100vw; height: 100vh; 
+	transform-style: preserve-3d;
+	transform: translateX(0) translateY(0) translateZ(-490vw); 
+}
+
+
+
+/* 컨테이너 */
+.container {
+	position: absolute;
+	transform-style: preserve-3d;
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+
+	transition: all 0.5s;
+}
+/*.content {
+	align-content: center; justify-content: center; 
+	width: 100%; height: 100%;
+}
+*/
+
+.house .floor_1 {
+	transform: translateZ(360vw);
+	padding: 4em 6em;
+	flex-direction: column;
+}
+
+.house .floor_2 {
+	transform: translateZ(200vw);
+}
+
+.house .floor_3 {
+	transform: translateZ(80vw);
+}
+
+.house .floor_4 {
+	transform: translateZ(-110vw);
+}
+
+.house .floor_5 {
+	transform: translateZ(-370vw);
+}
+
+.house .floor_end {
+	transform: translateZ(-490vw);
+}
+
+
+
+
+/* div 안의 이미지 속성 */
+.content img {position: absolute;}
+
+.theme {
+	width: 28.5vw; 
+	top: 13%; left: 16%;
+}
+.info {
+	width: 25vw; 
+	top: 3%; right: 15%; 
+}
+.professor {
+	width: 25vw; 
+	top: 39%; left: 16%;
+}
+.team {
+	width: 19vw;
+	top: 18%;
+	left: 21%;
+}
+
+.purple_box { 
+	width: 100vw; height: 100vh;
+	background-color: #6300FF;
+	filter: blur(50px);
+	position: absolute;
+ }
+.white_box { 
+	width: 90vw; height: 90vh; 
+	background-color: white;
+	filter: blur(30px);
+	position: absolute;
+	top: calc(50% - 45vh);
+	left: calc(50% - 45vw);
+}
+
+ .end_box {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	display: table;
+ }
+
+.end_box .link_box {
+ 	display: table-cell;
+ 	vertical-align: middle;
+ }
+
+.end_box .back, .end_box .cta_btn {
+	position: absolute;
+}
+
+
+.end_box .cta_btn {
+	position: relative; 
+	width: 20vw;
+	display: block;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.end_box .cta_btn img {
+	position: relative;
+}
+
+.link_list_box {
+	display: flex;
+	justify-content: center;
+}
+
+.end_box .link_listA, .end_box .link_listB  {
+	margin: 0 2rem;
+}
+
+.end_box .link_listA img, .end_box .link_listA a {
+	position: relative;
+    
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    
+    padding: 0.25rem 0;
+}
+
+
+.end_box .link_listB img , .end_box .link_listB a{
+	position: relative;
+    
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    
+    padding: 0.25rem 0;
+}
+
+
+.pd-3rem {
+	padding: 3rem 0 !important;
+}
+
+/*--------------미디어쿼리----------------*/
+/* 화면 너비 0 ~ 1220px */
+@media (max-width: 1220px){
+    .container {width: 100%;}
+    .row {padding: 0 15px;}
+}
+
+@media (max-width: 700px){
+	header .line {display: none;}
+    .logo p {display: none;}
+    body {padding-top: 150px;}
+	.mainM {display: none;}
+
+    
+}
+@media (max-width: 480px){
+	.navM:first-child {margin-right: 24px;}
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>test_스크롤 짧은 ver</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" href="./2021works/reset-mine.css">
+	<link rel="stylesheet" href="header.css">
+
+	<script src="./2021works/jquery.min.js"></script>
+	<script type="text/javascript" src="./2021works/script.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+
+	<header class="nav-down">
+		<div class="nav_container">
+			<div class="row">
+				<div class="navigation">
+					<!-- 로고 -->
+					<div class="logo">
+						<h1><div class="circle"></div><a href="http://hknudesign.kr/show/2020/work.html" id="on">the ME</a></h1>
+						<div class="line"></div>
+						<p>2O21 HKNU DESIGN Graduate Show</p>
+					</div>
+
+						<!-- 메뉴 -->
+					<nav>
+						<ul class="guide">
+							<li class="navM">
+								<div class="circle"></div>
+								<a href="http://hknudesign.kr/show/2020/work.html" id="on" style="color: #6300FF;">Works</a>
+							</li>
+							<li class="navM">
+								<div class="circle"></div>
+								<a href="http://hknudesign.kr/show/2020/student.html">Students</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>	
+
+	<!-- 3D공간 -->
+	<div class="world">
+		<div class="background">	
+			<!-- 백그라운드 이미지 -->
+			<img src="img/back2_test.png">
+
+			<!-- 스크롤 버튼 -->
+			<img src="img/scroll.png" class="scoll_btn">
+
+			<!-- skip intro -->
+			<a href="#"> <img src="img/skip_intro.png" class="skip_intro_btn"> </a>
+		</div>
+
+
+		<div class="stage">
+			<!-- 콘텐츠 공간 -->
+			<div class="house">
+
+				<!-- 인트로 동영상 -->
+				<!-- 비디오랑 같은 위치 같은 크기로 비디오 썸네일 넣어야 함 (비디오 없을 때 뜨라고) 썸네일은 아래 깔리도록
+				지금은 비디오 파일로 넣으려 했는데 용량 등의 문제가 있는지 다시 점검, 링크로는 못 넣는지(쿠키 문제 해결가능한지) 점검 -->
+				<div id="playerLayer" class="ivideo">
+					<div class="video_box">
+						<iframe src="https://www.youtube.com/embed/tUKcTznfjZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+
+				<div class="container floor_1 opa100 filter_back">
+					<div class="content">
+						<img src="img/theme.png" alt="" class="theme">
+					</div>
+				</div>
+				<div class="container floor_2 opa0 filter_backback">
+					<div class="content">
+						<img src="img/info.png" alt="" class="info">
+					</div>
+				</div>
+				<div class="container floor_3 opa0 filter_backback">
+					<div class="content">
+						<img src="img/professor.png" alt="" class="professor">
+					</div>
+				</div>
+				<div class="container floor_4 opa0">
+					<div class="content">
+						<img src="img/team.png" alt="" class="team">
+					</div>
+				</div>
+				<div class="container floor_5 opa0">
+					<div class="content purple_box">
+					</div>
+					<div class="content white_box">
+					</div>
+				</div>
+				<div class="container floor_end opa0">
+					<div class="content end_box">
+						<img src="img/final_back.jpg" class="back">
+						<div class="link_box">
+							<a href="#" class="cta_btn">
+								<img src="img/work_cta.png" >
+							</a>
+							<div class="link_list_box">
+								<div class="link_listA">
+									<img src="img/designweek.png" class="pd-3rem">
+									<a href="https://www.instagram.com/hknudesign.show/">
+										<img src="img/d_insta.png">
+									</a>
+									<a href="https://www.facebook.com/hkdesign.show">
+										<img src="img/d_fb.png">
+									</a>
+								</div>
+								<div class="link_listB">
+									<img src="img/hknudesign.png" class="pd-3rem"> 
+									<a href="http://hknudesign.kr/index.php">
+										<img src="img/h_home.png">
+									</a>
+									<a href="https://www.youtube.com/channel/UCxjGb_dSd3r8JkWN4QSZ4Dg">
+										<img src="img/h_youtube.png">
+									</a>
+									<a href="https://www.instagram.com/hknu_design/">
+										<img src="img/h_insta.png">
+									</a>
+									<a href="https://www.facebook.com/%ED%95%9C%EA%B2%BD%EB%8C%80%ED%95%99%EA%B5%90-%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EA%B3%BC-471440939590009">
+										<img src="img/h_fb.png">
+									</a>								
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 모바일 화면 -->
+
+	<!-- 
+	1. 스킵인트로를 넣을까?
+	2. 프로그레스 바를 넣읕까?
+	-->
+
+
+	<script type="text/javascript" src="scroll.js"></script>
+	<script type="text/javascript" src="./2021works/pagescroll.js"></script>
+</body>
+</html>
